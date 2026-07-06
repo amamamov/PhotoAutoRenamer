@@ -1,0 +1,15 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.aldonov53.photoautorenamer'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.aldonov53.photoautorenamer'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
