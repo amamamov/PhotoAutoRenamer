@@ -26,7 +26,7 @@ public class RenameService extends Service {
                 if (name == null) return;
                 String lower = name.toLowerCase(Locale.ROOT);
                 if (!(lower.endsWith(".jpg") || lower.endsWith(".jpeg") || lower.endsWith(".png") || lower.endsWith(".heic"))) return;
-                if (name.matches("\\d{6}\\..+")) return; // уже переименовано
+                if (name.matches("\\d{6}\\..+")) return;
                 File src = new File(cameraDir, name);
                 new Thread(() -> renameWhenReady(src)).start();
             }
