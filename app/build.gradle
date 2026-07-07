@@ -1,12 +1,13 @@
 plugins { id 'com.android.application' }
 
-android {
-    namespace 'com.aldonov53.photoautorenamer'
-    compileSdk 35
+dependencies { implementation 'androidx.core:core:1.13.1' }
 
+android {
+    namespace 'com.numbercamera.app'
+    compileSdk 35
     defaultConfig {
-        applicationId 'com.aldonov53.photoautorenamer'
-        minSdk 26
+        applicationId 'com.numbercamera.app'
+        minSdk 23
         targetSdk 35
         versionCode 1
         versionName '1.0'
